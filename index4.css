@@ -1,0 +1,102 @@
+/* Yasser Hasan , 000888803
+Index CSS Page
+ SA0004: I Yasser Hasan, 000888803 certify that this material is 
+my original work. No other person's work has been used without due 
+acknowledgement. I have not made my work available to anyone else. 
+*/
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    margin: 0; 
+    background-color: #000000; 
+    margin-bottom: 10px; 
+}
+
+#gameContainer {
+    width: 600px; 
+    height: 400px; 
+    position: relative;
+    border: 5px solid purple;
+    overflow: hidden;
+    background-color: gold; 
+}
+
+#car {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.cone {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    animation: moveCone 5s linear infinite;
+}
+
+
+
+#score {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #000;
+    font-size: 20px;
+}
+
+
+#instructionsContainer {
+    width: 300px; 
+    padding: 20px;
+    margin-right: 20px; 
+    background-color: gold; 
+    border: 5px solid purple; 
+}
+
+
+@keyframes moveCone {
+    0% { right: -20px; }
+    100% { right: 100%; }
+}
+
+.jump {
+    animation: jumpAnimation 0.3s ease-out; 
+}
+
+@keyframes jumpAnimation {
+     100% { bottom: 0; left: 0; }
+    20% { bottom: 150px; left: 30px; } 
+    80% { left: 60px; } 
+}
+
+
+#startBtn {
+    position: absolute;
+    top: 55%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    padding: 12px 22px;
+    font-size: 25px;
+    background-color: rgb(255, 255, 255);
+    color: #000;
+}
+
+
+footer {
+    width: 100%;
+    color: #fff; 
+    text-align: center;
+    padding: 12px 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+
+h3 {
+
+    color: orange;
+}
