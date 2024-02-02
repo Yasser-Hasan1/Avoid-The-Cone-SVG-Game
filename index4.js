@@ -1,9 +1,4 @@
-/* Yasser Hasan , 000888803
-    Index JS Page
-    SA0004: I Yasser Hasan, 000888803 certify that this material is 
-    my original work. No other person's work has been used without due 
-    acknowledgement. I have not made my work available to anyone else. 
-*/
+
 
 // This event listener ensures that the script runs after the DOM content is fully loaded.
 document.addEventListener('DOMContentLoaded', (event) => {
